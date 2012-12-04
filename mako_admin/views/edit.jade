@@ -1,0 +1,35 @@
+head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+body
+    form(action='/keyword/update/' + keyword._id, method='post')
+        table.tb
+            tr
+                th キーワード1
+                th キーワード2
+                th キーワード3
+                th 表情
+            tr
+                td
+                    input#keyword1(name='keyword1', type='text', value=keyword.keyword1)
+                td 
+                    input#keyword3(name='keyword2', type='text', value=keyword.keyword2)
+                td
+                    input#keyword3(name='keyword3', type='text', value=keyword.keyword3)
+                td
+                    select#face(name='face')
+                        option(value='0', selected=keyword.face=='0') 基本
+                        option(value='1', selected=keyword.face=='1') 喜ぶ
+                        option(value='2', selected=keyword.face=='2') 悲しむ
+                        option(value='3', selected=keyword.face=='3') 驚く
+                        option(value='4', selected=keyword.face=='4') 怒る
+            tr
+                th(colspan='4') 回答
+            tr
+                td(colspan='4') 
+                    input#answer(name='answer', type='text', value=keyword.answer)
+            tr
+                td(colspan='2')
+                    input#submit(type='submit', value='保存')
+                td(colspan='2')
+                    input(type="button",value='戻る',onClick="location.href='/'")
+                  

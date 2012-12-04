@@ -1,0 +1,44 @@
+head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+body
+    div(align='center')
+        h3 コンシェルジュ回答文管理画面
+        p
+            case m_stat
+                when '0'
+                    input(type="button",value='メガネ中', onClick="location.href='/status/update/'")
+                when '1'
+                    input(type="button",value='とりはずし中', onClick="location.href='/status/update/'")
+        p
+            input(type="button",value='新規作成',onClick="location.href='/keyword/new'")
+                新規作成
+        table.tb
+            tr
+                th.kw キーワード1
+                th.kw キーワード2
+                th.kw キーワード3
+                th.ans 回答
+                th.face 表情
+                th.ed 
+            - for (var i=0; i<keywords.length; i++  )
+                tr
+                    td.kw=keywords[i].keyword1
+                    td.kw=keywords[i].keyword2
+                    td.kw=keywords[i].keyword3
+                    td.ans=keywords[i].answer
+                    td.face
+                         case keywords[i].face
+                            when '0'
+                                p 基本
+                            when '1'
+                                p 喜ぶ
+                            when '2'
+                                p 悲しむ
+                            when '3'
+                                p 驚く
+                            when '4'
+                                p 怒る
+                            default
+                                p なし
+                    td.ed 
+                         a(href='/keyword/show/' + keywords[i]._id)|編集 

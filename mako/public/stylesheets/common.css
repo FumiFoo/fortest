@@ -1,0 +1,282 @@
+@charset "utf-8";
+
+
+/* ----------------------------------------
+  Default Reset   common Style Seet
+
+	1-1.ブラウザ初期設定リセット
+	1-2.配置
+	1-3.マージン
+	1-4.文字の大きさ
+	1-5.行間
+	1-6.文字装飾
+	1-7.文字の色
+	1-8.ボーダー
+	1-9.テーブル
+	1-10.引用
+	1-11.クリアフィックス
+---------------------------------------- */
+
+
+/* ----------------------------------------
+  1-1.ブラウザ初期設定リセット
+---------------------------------------- */
+
+*{
+	margin:0;
+	padding:0;
+	font-style:normal;
+	letter-spacing:0;
+}
+
+html {overflow-y:scroll;}
+
+p {margin:0;}
+
+ul , li{list-style-type:none;}
+
+img{
+	border:0;
+	vertical-align:bottom;
+}
+
+textarea{font-size:100%;}
+
+form, fieldset, input, button{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+
+html,body,section,article,aside,header,nav,hgroup,figure,footer,div,
+dl,dt,dd,ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+p,address,blockquote,
+legend,fieldset {
+	display: block;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: top;
+	list-style-type: none;
+}
+
+
+/* ----------------------------------------
+  1-2.配置
+---------------------------------------- */
+
+.left{float:left;display:inline;}
+.right{float:right;display:inline;}
+.clear{clear:both;}
+.clearleft{clear:left;}
+.clearright{clear:right;}
+
+.alignleft{text-align:left;}
+.aligncenter{text-align:center;}
+.alignright{text-align:right;}
+
+
+/* ----------------------------------------
+  1-3.マージン
+---------------------------------------- */
+
+.m2{margin:2px;}
+.m5{margin:5px;}
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m20{margin:20px;}
+.m30{margin:30px;}
+.m40{margin:40px;}
+
+.mt2{margin-top:2px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt40{margin-top:40px;}
+
+.mr2{margin-right:2px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.mr20{margin-right:20px;}
+.mr30{margin-right:30px;}
+.mr40{margin-right:40px;}
+
+.mb2{margin-bottom:2px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.mb20{margin-bottom:20px;}
+.mb30{margin-bottom:30px;}
+.mb40{margin-bottom:40px;}
+.mb50{margin-bottom:50px;}
+
+.mu60{margin-bottom:60px;}
+.mb100{margin-bottom:100px;}
+
+
+.ml2{margin-left:2px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.ml20{margin-left:20px;}
+.ml30{margin-left:30px;}
+.ml40{margin-left:40px;}
+
+.pt10{padding-top:10px;}
+.pt20{padding-top:20px;}
+.pb50{padding-bottom:50px;}
+.pb100{padding-bottom: 100px;}
+
+/* ----------------------------------------
+  1-4.文字の大きさ
+---------------------------------------- */
+
+.f50{font-size:50%;}
+.f80{font-size:80%;}
+.f90{font-size:90%;}
+.f110{font-size:110%;}
+.f120{font-size:120%;}
+.f130{font-size:130%;}
+
+.f9{font-size:9px;}
+.f10{font-size:10px;}
+.f11{font-size:11px;}
+.f12{font-size:12px;}
+.f13{font-size:13px;}
+.f14{font-size:14px;}
+.f15{font-size:15px;}
+.f16{font-size:16px;}
+.f17{font-size:17px;}
+.f18{font-size:18px;}
+.f19{font-size:19px;}
+.f20{font-size:20px;}
+.f25{font-size:25px;}
+.f30{font-size:30px;}
+
+.ti-50{text-indent:-.5em;}
+
+/* ----------------------------------------
+  1-5.行間
+---------------------------------------- */
+
+.lh110{line-height:110%;}
+.lh120{line-height:120%;}
+.lh130{line-height:130%;}
+.lh140{line-height:140%;}
+.lh150{line-height:150%;}
+.lh160{line-height:160%;}
+.lh170{line-height:170%;}
+.lh180{line-height:180%;}
+.lh185{line-height:185%}
+.lh190{line-height:190%;}
+.lh200{line-height:200%;}
+
+
+/* ----------------------------------------
+  1-6.文字装飾
+---------------------------------------- */
+
+em{
+	font-style:normal;
+	font-weight:bold;
+}
+.bold{font-weight:bold;}
+.italic{font-style:italic;}
+
+.under{text-decoration:underline;}
+
+/* ----------------------------------------
+  1-7.文字の色
+---------------------------------------- */
+
+.red{color:#ff0000;}
+.white{color:#fefefe;}
+.blue{color:#0000ff;}
+.black{color:#000000;}
+.orange{color:#ffa500;}
+
+.aqua{color:#00ffff;}
+.lime{color:#00ff00;}
+.olive{color:#808000;}
+.silver{color:#c0c0c0;}
+.yellow{color:#ffff00;}
+.gray{color:#808080;}
+.maroon{color:#800000;}
+.purple{color:#800080;}
+.green{color:#008000;}
+.navy{color:#000080;}
+.gold{color:#A18714;}
+
+/* ----------------------------------------
+  1-8.ボーダー
+---------------------------------------- */
+
+.border{border:1px solid #aaa;}
+
+
+/* ----------------------------------------
+  1-9.テーブル
+---------------------------------------- */
+
+table{
+	border-collapse:collapse;
+	border-spacing:1;
+	empty-cells:show;
+}
+
+
+/* ----------------------------------------
+  1-10.引用
+---------------------------------------- */
+
+blockquote{}
+
+
+/* ----------------------------------------
+  1-11.クリア
+---------------------------------------- */
+
+ul:after ,
+dl:after ,
+ol:after ,
+.clearfix:after ,
+#container:after ,
+#wrapper:after ,
+header:after ,
+nav:after ,
+footer:after,
+section:after{
+	content:".";
+	height:0;
+	clear:both;
+	display:block;
+	visibility:hidden;
+}
+
+ul ,
+dl ,
+ol
+.clearfix ,
+#container ,
+#wrapper ,
+header ,
+nav,
+footer,
+section,
+{
+	zoom:100%;
+}
+
+.cl{
+	_zoom:1;
+	overflow:hidden;
+}

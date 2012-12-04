@@ -1,0 +1,42 @@
+head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+body
+    form(action='/keyword/insert', method='post')
+        table.tb
+            tr
+                th キーワード1
+                th キーワード2
+                th キーワード3
+                th 表情
+            tr
+                td
+                    p=keyword.keyword1
+                td 
+                    p=keyword.keyword2
+                td
+                    p=keyword.keyword3
+                td
+                    case keyword.face
+                        when '0'
+                            基本
+                        when '1'
+                            喜ぶ
+                        when '2'
+                            悲しむ
+                        when '3'
+                            驚く
+                        when '4'
+                            怒る
+            tr
+                th(colspan='4')  回答
+            tr
+                td(colspan='4')
+                    p=keyword.answer
+            tr
+                td
+                    input(type="button",value='編集', onClick="location.href='/keyword/edit/#{keyword._id}'")
+                td
+                    input(type="button",value='戻る', onClick="location.href='/'")
+                td
+                td
+                    input(type="button",value='削除', onClick="location.href='/keyword/delete/#{keyword._id}'")

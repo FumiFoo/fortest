@@ -1,0 +1,27 @@
+body {
+}
+
+a {
+  color: #00B7FF;
+}
+
+table.tb { width:90%;
+           border-collapse:collapse;
+		   border: 1px solid; 
+		   font-size 11px;
+		   table-layout: fixed;
+		   text-align:center;}
+.tb th.kw { width:15%;  font-size:10pt; background-color: #E3E3E3; border: 1px #808080 solid; }
+.tb th.ans { width:50%;; font-size:10pt; background-color: #E3E3E3; border: 1px #808080 solid;}
+.tb th.face{ width:10%; font-size:10pt; background-color: #E3E3E3 ;border: 1px #808080 solid;}
+.tb th.ed { width:5%;  font-size:10pt; background-color: #E3E3E3; border: 1px #808080 solid; }
+.tb td.kw { width:15%; font-size:10pt; ;border: 1px #808080 solid;}
+.tb td.ans { width:40%;font-size:10pt; ;border: 1px #808080 solid;}
+.tb td.face { width:10%; font-size:10pt; ;border: 1px #808080 solid;}
+.tb td.ed { width:5%; font-size:10pt; ;border: 1px #808080 solid;}
+
+tr:nth-child(2n+1){
+ background: #F0F0F0;
+}
+
+input[type="text"] {width:90%}

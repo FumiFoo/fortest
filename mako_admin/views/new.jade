@@ -1,0 +1,58 @@
+head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+body
+    div(align='center')
+        form(action='/keyword/insert', method='post')
+            table.tb
+                tr
+                    th キーワード1
+                    th キーワード2
+                    th キーワード3
+                    th 表情
+                tr
+                    td
+                        input#keyword1(name='keyword1', type='text')
+                    td 
+                        input#keyword3(name='keyword2', type='text')
+                    td
+                        input#keyword3(name='keyword3', type='text')
+                    td
+                        select#face(name='face')
+                            option(value='0', selected='selected') 基本
+                            option(value='1') 喜ぶ
+                            option(value='2') 悲しむ
+                            option(value='3') 驚く
+                            option(value='4') 怒る
+                tr
+                    th(colspan='4') 回答
+                tr
+                    td(colspan='4')
+                        input#answer(name='answer', type='text')
+                tr
+                    td(colspan='2')
+                        input#submit(type='submit', value='保存')
+                    td(colspan='2')
+                        input(type="button",value='戻る',onClick="location.href='/'")
+        br
+        h3 回答不能履歴
+        table.tb
+            tr
+                 th 質問
+                 th キーワード候補
+                 th タイムスタンプ
+                 th 
+            - for(var i = 0;i < inquiries.length; i++)
+                
+                tr
+                    td.ans=inquiries[i].inquiry
+                    td.ans
+                        table
+                            each data in JSON.parse(inquiries[i].inquirydata)
+                                if(data.pos=="名詞"||data.pos=="動詞")
+                                    tr
+                                        td= data.pos
+                                        td= data.surface
+                    td.kw=inquiries[i].timestamp.toLocaleString()
+                    td.kw
+                        input(type="button",value='削除', onClick="location.href='/inquiry/delete/#{inquiries[i]._id}'")
+
