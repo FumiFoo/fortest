@@ -1,0 +1,26 @@
+html
+    head
+        meta(charset='utf-8')
+        title アフィリエイトのバリューコマース|教えてまこちゃん
+        meta(name='keywords', content='')
+        link(rel='shortcut icon', href='/img/common/favicon.ico')
+        link(rel='stylesheet', href='/stylesheets/common.css', type='text/css')
+        link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
+        script(src='/javascripts/script.js')
+    body
+        header
+            .face
+                - if(glasses==0)
+                    embed(src='/images/default_g.swf',width='200',height='250')
+                -else
+                    embed(src='/images/default.swf',width='200',height='250')
+        .formwrap
+            .send
+                form(name='form1', action='#', style='margin:0px;')
+                    input.formtxt(type='text', name='name', size='25')
+                    input.sendbtn(type='image', src='/images/btn_quest.png', onclick='this.form1.submit(); return false;' )
+            .reception 
+    footer
+        p.aligncenter
+        a(href='#') ×閉じる
+

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{ 
+	overflow-y: scroll; 
+}
+body { 
+	background: url("../images/background.jpg") left top no-repeat;　
+/*	background: url("../images/background_.jpg") left top no-repeat;　*//*新着おすすめ広告主ボタン有*/
+	text-align: center; 
+}
+header,footer { 
+	width: 200px; 
+	text-align: center; 
+}
+embed {
+	width: 200px; 
+	height: 250px; 
+	margin: 40px 20px 3px 20px; 
+}
+.formwrap { 
+	width: 200px; 
+	margin: 0 20px 13px 20px; 
+}
+.send { 
+	padding-right: 0; 
+	margin-bottom: -6px; 
+	vertical-align: middle; 
+}
+.send .sendbtn {
+	position: relative; 
+	top: 0px; 
+}
+.formtxt { 
+	width: 120px; 
+	height: 25px; 
+	margin-right: 2px; 
+	padding: 5px; 
+	font-size: 11px; 
+	border: #ff6699 solid 1px; 
+	position: relative; 
+	top: -12px; 
+}
+.reception { 
+	width: 187px; 
+	height: 170px; 
+	margin-bottom: 5px; 
+	padding: 5px; 
+	font-size: 11px; 
+	line-height: 150%; 
+	letter-spacing: 0.1em; 
+	text-align:left; 
+	border: #ff6699 solid 1px; 
+	background-color: #fffee1; 
+	overflow: auto; 
+}
+footer { 
+	padding: 0 20px; 
+	font-size: 12px; 
+}
+
+
+/*共通
+--------------------------------------*/
+.width200 { width: 200px; }
