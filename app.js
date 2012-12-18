@@ -25,7 +25,7 @@ var PassageID;
 var app = express();
 
 app.configure(function(){
-//	app.set('port', process.env.PORT || 8080);
+	app.set('port', process.env.PORT || 8080);
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'jade');
 	app.use(express.favicon());
@@ -36,10 +36,6 @@ app.configure(function(){
 	app.use(express.static(path.join(__dirname, 'public')));
 });
 
-var port = process.env.PORT || 3000;
-app.listen(port, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
-});
 app.configure('development', function(){
 	app.use(express.errorHandler());
 });
