@@ -14,7 +14,7 @@
     "jade": "*",
     "cheerio": "*",
     "jsdom": "*",
-    "mongoose": ":"*",
+    "mongoose": "*",
     "request": "*"
   }
 }
