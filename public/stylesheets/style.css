@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 html{ 
@@ -7,7 +7,8 @@ html{
 body { 
 	background: url("../images/background.jpg") left top no-repeat;　
 /*	background: url("../images/background_.jpg") left top no-repeat;　*//*新着おすすめ広告主ボタン有*/
-	text-align: center; 
+	text-align: center;
+	border:none;
 }
 header,footer { 
 	width: 200px; 
